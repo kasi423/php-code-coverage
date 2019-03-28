@@ -6,7 +6,6 @@
         <delete dir="${basedir}/vendor"/>
         <delete file="${basedir}/composer.lock"/>
     </target>
-
     <target name="install-dependencies" depends="clean" description="Install dependencies with Composer">
         <exec executable="${basedir}/tools/composer" taskname="composer">
             <arg value="update"/>
